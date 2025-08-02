@@ -12,10 +12,7 @@ export function Header() {
   return (
     <header className="w-full bg-[#ddf1ff] overflow-hidden rounded-b-[60px] min-h-screen">
       <div className="header_area_wrapper w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-6 h-full">
-        {/* Top Label */}
-        <div className="lg:hidden text-sm text-gray-600 mb-4">
-          Для нанимающих
-        </div>
+
         
         {/* Navigation Bar */}
         <div className="navbar w-full transition-all duration-800 ease-out bg-white rounded-[100px] shadow-[2px_5px_34px_0px_#7695aa61]">
@@ -23,7 +20,7 @@ export function Header() {
             <div className="logo">
               <Link href="#" className="h-[50px] sm:h-[50px] lg:h-[54px] flex items-center">
                 <Image
-                  src="/logo.png"
+                  src="/relevants-logo.png"
                   alt="Relevants"
                   width={120}
                   height={40}
