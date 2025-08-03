@@ -132,24 +132,20 @@ export function Header() {
                 <div className="hero_meta flex flex-col gap-8 sm:gap-10 lg:gap-12">
                   <div className="hero_meta_head">
                     <article className="font-raleway text-2xl sm:text-3xl md:text-4xl lg:text-[45px] font-black leading-tight sm:leading-tight md:leading-tight lg:leading-[56px] text-left text-black">
-                      Relevants – получайте доступ к специалистам мгновенно
-                    </article>
-                    <div className="on_business relative mt-2 sm:mt-4">
-                      <h2 className="font-caveat text-3xl sm:text-4xl md:text-5xl lg:text-[82px] font-normal leading-tight sm:leading-tight md:leading-tight lg:leading-[82px] text-left relative z-10 text-black">
-                        мгновенно
-                      </h2>
-                      <div className="business_border absolute w-24 sm:w-28 md:w-32 lg:w-[280px] h-4 sm:h-4 md:h-4 lg:h-[12px] top-6 sm:top-8 md:top-10 lg:top-[52.42px] -left-4 sm:-left-4 md:-left-4 lg:-left-[12px] z-0">
-                        <svg width="100%" height="100%" viewBox="0 0 300 16" className="w-full h-full">
-                          <path 
-                            d="M15,8 Q35,4 55,8 Q75,12 95,8 Q115,4 135,8 Q155,12 175,8 Q195,4 215,8 Q235,12 255,8 Q275,4 285,8" 
-                            stroke="#E6B8E6" 
-                            strokeWidth="10" 
-                            fill="none" 
-                            strokeLinecap="round"
+                      Relevants – получайте доступ к специалистам{' '}
+                      <span className="relative inline-block">
+                        <span className="relative z-10">мгновенно</span>
+                        <div className="absolute bottom-0 left-0 w-[120%] sm:w-[200%] md:w-[300%] lg:w-[560%] h-4 sm:h-6 z-0 -left-[10%] sm:-left-[50%] md:-left-[100%] lg:-left-[230%]">
+                          <Image
+                            src="/Vector324.svg"
+                            alt="Decorative underline"
+                            width={204}
+                            height={27}
+                            className="w-full h-full object-contain"
                           />
-                        </svg>
-                      </div>
-                    </div>
+                        </div>
+                      </span>
+                    </article>
                   </div>
 
                   <h1 className="font-raleway text-base sm:text-lg md:text-xl font-normal leading-6 sm:leading-7 text-left text-black">
