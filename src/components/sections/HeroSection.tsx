@@ -96,8 +96,8 @@ export function HeroSection() {
           {/* Avatar Cards */}
           <div className="flex justify-center items-center mb-4 xs:mb-6 sm:mb-8 relative">
             {/* "с нами работают" text positioned on top of last 2 cards - desktop only */}
-            <div className="absolute top-0 z-10 hidden sm:block" style={{ right: '200px' }}>
-              <p className="text-2xl sm:text-3xl lg:text-4xl font-caveat font-bold text-[#333333] transform rotate-12 origin-bottom-right">
+            <div className="absolute top-0 z-10 hidden sm:block sm:right-[160px] md:right-[140px] lg:right-[120px] xl:right-[100px]">
+              <p className="text-lg sm:text-xl lg:text-2xl font-caveat font-bold text-[#333333] transform rotate-12 origin-bottom-right">
                 с нами <span className="underline decoration-2 underline-offset-4">работают</span>
               </p>
             </div>
@@ -107,10 +107,10 @@ export function HeroSection() {
                 {mobileAvatarData.map((avatar, index) => (
                   <div
                     key={`mobile-${index}`}
-                    className="flex flex-col items-center p-1 xs:p-1 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white mobile-no-transform"
+                    className="flex flex-col items-center p-1 xs:p-1 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
                   >
                     <div 
-                      className="w-20 h-28 xs:w-24 xs:h-32 mb-2 rounded-lg p-2 xs:p-3"
+                      className="w-20 h-20 xs:w-24 xs:h-24 mb-2 rounded-lg p-3 xs:p-4"
                       style={{ backgroundColor: avatar.bgColor }}
                     >
                       <Image
@@ -122,7 +122,7 @@ export function HeroSection() {
                       />
                     </div>
                     <div className="text-center">
-                      <p className="text-xs xs:text-xs font-semibold text-[#000000]">
+                      <p className="text-xs xs:text-xs font-caveat font-bold text-[#000000]">
                         {avatar.name}
                       </p>
                     </div>
@@ -135,9 +135,9 @@ export function HeroSection() {
                 {avatarData.map((avatar, index) => (
                                      <div
                      key={`desktop-${index}`}
-                     className="flex flex-col items-center p-1 xs:p-1 sm:p-2 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white"
+                     className="flex flex-col items-center p-1 xs:p-1 sm:p-2 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA]"
                      style={{
-                       transform: `translateY(${Math.abs(index - 2) * 32}px) translateX(${(index - 2) * -8}px) rotate(${(index - 2) * 3}deg)`,
+                       transform: `translateY(${Math.abs(index - 2) * 32 + (index === 0 || index === 4 ? 16 : 0)}px) translateX(${(index - 2) * -28 + (index === 0 ? 8 : index === 4 ? -8 : 0)}px) rotate(${(index - 2) * 8 + (index === 0 ? -6 : index === 1 ? -4 : index === 3 ? 4 : index === 4 ? 6 : 0)}deg)`,
                        zIndex: 5 - Math.abs(index - 2)
                      }}
                    >
@@ -154,7 +154,7 @@ export function HeroSection() {
                       />
                     </div>
                     <div className="text-center">
-                      <p className="text-xs xs:text-xs sm:text-sm md:text-base font-semibold text-[#000000]">
+                      <p className="text-xs xs:text-xs sm:text-sm md:text-base font-caveat font-bold text-[#000000]">
                         {avatar.name}
                       </p>
                     </div>
@@ -165,7 +165,7 @@ export function HeroSection() {
           </div>
           
           {/* Small text */}
-          <p className="text-xs xs:text-sm sm:text-sm text-[#666666] text-center mb-4 xs:mb-6 sm:mb-8 mt-6 xs:mt-8 sm:mt-12 lg:mt-16 pt-2 xs:pt-4 sm:pt-6 lg:pt-8">
+          <p className="text-xs xs:text-sm sm:text-sm text-[#666666] text-center mb-2 xs:mb-3 sm:mb-4 mt-4 xs:mt-6 sm:mt-10 md:mt-12 lg:mt-10 pt-1 xs:pt-2 sm:pt-4 md:pt-6 lg:pt-4 font-semibold">
             Расскажите, что вы ищете
           </p>
           

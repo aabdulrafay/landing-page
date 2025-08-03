@@ -15,8 +15,8 @@ export function Header() {
 
         
         {/* Navigation Bar */}
-        <div className="navbar w-full transition-all duration-800 ease-out bg-white rounded-[100px] shadow-[2px_5px_34px_0px_#7695aa61]">
-          <div className="navbar_area_wrapper max-w-[1440px] mx-auto w-full px-4 sm:px-6 py-2 rounded-[100px] flex justify-between items-center bg-white shadow-[2px_5px_34px_0px_#7695aa61]">
+        <div className="navbar w-full transition-all duration-800 ease-out bg-transparent lg:bg-white rounded-[100px] shadow-none lg:shadow-[2px_5px_34px_0px_#7695aa61]">
+          <div className="navbar_area_wrapper max-w-[1440px] mx-auto w-full px-4 sm:px-6 py-2 rounded-[100px] flex justify-between items-center bg-transparent lg:bg-white shadow-none lg:shadow-[2px_5px_34px_0px_#7695aa61]">
             <div className="logo">
               <Link href="#" className="h-[50px] sm:h-[50px] lg:h-[54px] flex items-center">
                 <Image
@@ -117,7 +117,10 @@ export function Header() {
               className="hamburger lg:hidden cursor-pointer"
               onClick={() => setIsMenuOpen(true)}
             >
-              <Menu size={24} className="text-gray-600" />
+              <div className="flex flex-col gap-1">
+                <div className="w-6 h-0.5 bg-black rounded"></div>
+                <div className="w-4 h-0.5 bg-black rounded"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -132,30 +135,32 @@ export function Header() {
                 <div className="hero_meta flex flex-col gap-4 sm:gap-6 lg:gap-8">
                   <div className="hero_meta_head">
                     <article className="font-raleway text-2xl sm:text-3xl md:text-4xl lg:text-[45px] font-black leading-tight sm:leading-tight md:leading-tight lg:leading-[56px] text-left text-black">
-                      Relevants – получайте доступ к специалистам{' '}
+                      Relevants – получайте доступ{' '}
+                      <span className="hidden sm:inline">к специалистам</span>
+                      <span className="sm:hidden"><br />к специалистам</span>{' '}
                       <span className="relative inline-block">
                         <span className="relative z-10">мгновенно</span>
-                        <div className="absolute bottom-0 left-0 w-[120%] sm:w-[200%] md:w-[300%] lg:w-[560%] h-4 sm:h-6 z-0 -left-[10%] sm:-left-[50%] md:-left-[100%] lg:-left-[230%]">
+                        <div className="absolute bottom-0 left-0 w-full z-0">
                           <Image
                             src="/Vector324.svg"
                             alt="Decorative underline"
                             width={204}
                             height={27}
-                            className="w-full h-full object-contain"
+                            className="w-full h-auto object-contain"
                           />
                         </div>
                       </span>
                     </article>
                   </div>
 
-                  <h1 className="font-raleway text-base sm:text-lg md:text-xl font-normal leading-6 sm:leading-7 text-left text-black">
+                  <h1 className="font-raleway text-base sm:text-lg md:text-xl font-normal leading-6 sm:leading-7 text-justify text-black max-w-[360px] sm:max-w-[400px] md:max-w-[440px] lg:max-w-[480px]">
                     Здесь можно нанять специалиста на проект, задачу напрямую — без чатов, спама и ожидания
                   </h1>
                 </div>
 
                 <div className="hero_bottom_meta flex flex-col justify-start items-start gap-4 sm:gap-6 lg:gap-8">
                   {/* Action buttons */}
-                  <div className="hidden sm:flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="hidden sm:flex flex-col sm:flex-row gap-8 sm:gap-12 lg:gap-20 max-w-[360px] sm:max-w-[400px] md:max-w-[440px] lg:max-w-[480px]">
                     <Link
                       className="text-white bg-blue-600 w-full sm:w-auto min-w-[200px] h-12 px-6 rounded-full cursor-pointer transition-all duration-200 ease font-raleway text-sm sm:text-base font-semibold leading-6 text-center hover:bg-blue-700 flex items-center justify-center"
                       href="#"
