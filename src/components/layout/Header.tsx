@@ -10,7 +10,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="w-full bg-[#ddf1ff] overflow-hidden rounded-b-[60px] min-h-screen">
+    <header className="w-full bg-[#ddf1ff] overflow-hidden rounded-b-[60px] min-h-screen relative z-10">
       <div className="header_area_wrapper w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-6 h-full">
 
         
@@ -124,7 +124,7 @@ export function Header() {
 
         {/* Hero Area */}
         <div className="hero_area w-full flex-1 flex items-center">
-          <div className="hero_area_wrapper flex flex-col lg:flex-row justify-between items-center w-full h-full py-8 px-4 sm:px-6 gap-8 lg:gap-12">
+          <div className="hero_area_wrapper flex flex-col lg:flex-row justify-between items-center w-full h-full py-16 sm:py-24 lg:py-32 px-4 sm:px-6 gap-8 lg:gap-12">
             {/* Left Content */}
             <div className="hero_left w-full lg:w-1/2">
               <div className="hero_left_area_wrapper flex flex-col gap-12 sm:gap-16 lg:gap-20">
@@ -155,7 +155,7 @@ export function Header() {
 
                 <div className="hero_bottom_meta flex flex-col justify-start items-start gap-8 sm:gap-10 lg:gap-14">
                   {/* Action buttons */}
-                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="hidden sm:flex flex-col sm:flex-row gap-4 sm:gap-6">
                     <Link
                       className="text-white bg-blue-600 w-full sm:w-auto min-w-[200px] h-12 px-6 rounded-full cursor-pointer transition-all duration-200 ease font-raleway text-sm sm:text-base font-semibold leading-6 text-center hover:bg-blue-700 flex items-center justify-center"
                       href="#"
