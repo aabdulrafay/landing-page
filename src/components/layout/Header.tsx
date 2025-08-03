@@ -47,7 +47,7 @@ export function Header() {
               {/* Desktop Navigation */}
               <ul className="navlinks hidden lg:flex justify-center items-center w-full gap-4 lg:gap-6">
                 {navItems.map((item) => (
-                  <li key={item.href}>
+                  <li key={item.title}>
                     <Link
                       href={item.href}
                       onClick={() => setIsMenuOpen(false)}
@@ -63,7 +63,7 @@ export function Header() {
               <div className="lg:hidden flex flex-col justify-between h-full w-full px-6 py-6">
                 <ul className="navlinks flex flex-col items-start w-full gap-8 mt-20">
                   {navItems.map((item) => (
-                    <li key={item.href} className="w-full">
+                    <li key={item.title} className="w-full">
                       <Link
                         href={item.href}
                         onClick={() => setIsMenuOpen(false)}
