@@ -124,12 +124,12 @@ export function Header() {
 
         {/* Hero Area */}
         <div className="hero_area w-full flex-1 flex items-center">
-          <div className="hero_area_wrapper flex flex-col lg:flex-row justify-between items-center w-full h-full py-16 sm:py-24 lg:py-32 px-4 sm:px-6 gap-8 lg:gap-12">
+          <div className="hero_area_wrapper flex flex-col lg:flex-row justify-between items-center w-full h-full py-4 sm:py-6 lg:py-8 px-4 sm:px-6 gap-8 lg:gap-12">
             {/* Left Content */}
             <div className="hero_left w-full lg:w-1/2">
-              <div className="hero_left_area_wrapper flex flex-col gap-12 sm:gap-16 lg:gap-20">
+                              <div className="hero_left_area_wrapper flex flex-col gap-6 sm:gap-8 lg:gap-12">
                 {/* Relevants — получайте доступ к специалистам мгновенно */}
-                <div className="hero_meta flex flex-col gap-8 sm:gap-10 lg:gap-12">
+                <div className="hero_meta flex flex-col gap-4 sm:gap-6 lg:gap-8">
                   <div className="hero_meta_head">
                     <article className="font-raleway text-2xl sm:text-3xl md:text-4xl lg:text-[45px] font-black leading-tight sm:leading-tight md:leading-tight lg:leading-[56px] text-left text-black">
                       Relevants – получайте доступ к специалистам{' '}
@@ -153,7 +153,7 @@ export function Header() {
                   </h1>
                 </div>
 
-                <div className="hero_bottom_meta flex flex-col justify-start items-start gap-8 sm:gap-10 lg:gap-14">
+                <div className="hero_bottom_meta flex flex-col justify-start items-start gap-4 sm:gap-6 lg:gap-8">
                   {/* Action buttons */}
                   <div className="hidden sm:flex flex-col sm:flex-row gap-4 sm:gap-6">
                     <Link
