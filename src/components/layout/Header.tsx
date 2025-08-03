@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { X } from "lucide-react"
 import { navItems, actionButtons } from "@/lib/config"
 
 export function Header() {
@@ -97,7 +97,7 @@ export function Header() {
 
               {/* Desktop Buttons */}
               <div className="navBtns hidden lg:flex min-w-[180px] lg:min-w-[220px] justify-end items-center gap-3 lg:gap-6">
-                {actionButtons.map((button, index) => (
+                {actionButtons.map((button) => (
                   <Link
                     key={button.title}
                     href={button.href}

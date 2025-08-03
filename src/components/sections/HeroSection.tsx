@@ -68,14 +68,14 @@ export function HeroSection() {
   return (
     <section className="w-full bg-white py-16 sm:py-12 lg:py-16 -mt-12 lg:-mt-12 lg:pt-32 relative z-0">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <div className="text-left sm:text-center">
           {/* Main Heading */}
-          <h1 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-[36px] font-bold text-[#333333] leading-tight mb-3 xs:mb-4 sm:mb-6 max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-xl mx-auto">
+          <h1 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-[36px] font-bold text-[#333333] leading-tight mb-3 xs:mb-4 sm:mb-6 max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-xl sm:mx-auto">
             Мы помогаем собирать команды по всему миру
           </h1>
           
           {/* Subheading */}
-          <div className="text-xs xs:text-sm sm:text-base lg:text-[18px] text-[#666666] leading-relaxed max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-xl mx-auto mb-6 xs:mb-8 sm:mb-12 text-center">
+          <div className="text-xs xs:text-sm sm:text-base lg:text-[18px] text-[#666666] leading-relaxed max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-xl sm:mx-auto mb-6 xs:mb-8 sm:mb-12 text-left sm:text-center">
             <p className="mb-2 xs:mb-3 sm:mb-4">
               С Relevants вы быстрее запускаете проекты — за счёт точного AI-подбора фрилансеров и сотрудников под ваши задачи.
             </p>
@@ -136,10 +136,10 @@ export function HeroSection() {
                                      <div
                      key={`desktop-${index}`}
                      className="flex flex-col items-center p-1 xs:p-1 sm:p-2 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA]"
-                     style={{
-                       transform: `translateY(${Math.abs(index - 2) * 32 + (index === 0 || index === 4 ? 16 : 0)}px) translateX(${(index - 2) * -28 + (index === 0 ? 8 : index === 4 ? -8 : 0)}px) rotate(${(index - 2) * 8 + (index === 0 ? -6 : index === 1 ? -4 : index === 3 ? 4 : index === 4 ? 6 : 0)}deg)`,
-                       zIndex: 5 - Math.abs(index - 2)
-                     }}
+                                           style={{
+                        transform: `translateY(${Math.abs(index - 2) * 32 + (index === 0 || index === 4 ? 16 : 0)}px) translateX(${(index - 2) * -28 + (index === 0 ? 4 : index === 1 ? -11 : index === 3 ? 13 : index === 4 ? -5 : 0)}px) rotate(${(index - 2) * 8 + (index === 0 ? -6 : index === 1 ? -8 : index === 3 ? 8 : index === 4 ? 10 : 0)}deg)`,
+                        zIndex: 5 - Math.abs(index - 2)
+                      }}
                    >
                     <div 
                       className="w-20 h-28 xs:w-24 xs:h-32 sm:w-20 sm:h-28 md:w-24 md:h-32 lg:w-28 lg:h-36 xl:w-32 xl:h-40 2xl:w-36 2xl:h-44 mb-2 sm:mb-3 rounded-lg p-2 xs:p-3 sm:p-4 lg:p-6"
